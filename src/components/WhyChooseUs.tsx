@@ -2,6 +2,16 @@
 import Image from "next/image";
 import { StickyScroll } from "./ui/sticky-scroll-reveal";
 
+function WhyChooseUs() {
+  return (
+    <div>
+      <StickyScroll content={musicSchoolContent} contentClassName="color-box" />
+    </div>
+  );
+}
+
+export default WhyChooseUs;
+
 const musicSchoolContent = [
   {
     title: "Discover Your Sound with Us: A Personal Journey in Music Mastery",
@@ -24,13 +34,3 @@ const musicSchoolContent = [
       "With our expansive resource library and dynamic course offerings, you’ll never find yourself without something new to explore. Our platform provides continuous opportunities for growth, ensuring your musical skills are always advancing.",
   },
 ];
-
-function WhyChooseUs() {
-  return (
-    <div>
-      <StickyScroll content={musicSchoolContent} contentClassName="color-box" />
-    </div>
-  );
-}
-
-export default WhyChooseUs;
